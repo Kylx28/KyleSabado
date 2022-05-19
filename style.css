@@ -68,7 +68,7 @@ nav{
     width:70%;
     color: black;
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -77,7 +77,25 @@ nav{
     font-size: 50px;
 }
 .section p{
-    margin: 10px 0px 40px;
-    font-size: 21px;
-    color:rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: white;
+}
+.rectangle{
+  margin-top: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 150px;
+  width: 70%;
+  padding: 10px;
+  height: 400px;
+  width: 700px;
+  background-color: #2E2C29;
+}
+.rectangle p{
+  font-size: 17px;
+  color: white;
 }
