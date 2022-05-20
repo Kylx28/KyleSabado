@@ -103,4 +103,22 @@ nav{
     margin-left: 100px;
     margin-bottom: 100px;
 }
-
+/*Classes and Objects*/
+.rectangle2{
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    outline: red solid 10px;
+    width: 70%;
+    padding: 10px;
+    height: 200px;
+    width: 700px;
+    background-color: white;
+}
+.rectangle2 p{
+    color: black;
+    font-size: 23px;
+    background-color: white;
+    text-align: center;
+}
