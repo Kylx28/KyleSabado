@@ -67,7 +67,7 @@
                 <br><br>
                 2. Then, you must create an ArrayList object and specify the data type you want to store inside the ArrayList
                 <br><br>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspArrayList&ltString&gt = new ArrayList&ltString&gt(4) 
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspArrayList&ltString&gt array2 = new ArrayList&ltString&gt(4) 
                 <br><br>
                 3. After instantiating the ArrayList, you can add any number of elements to the list using the .add function.
                 <br><br>
@@ -80,11 +80,90 @@
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsparray.add("McLaren")
                 <br><br><br>
             </p>
+            <h3>Array and ArrayList Methods</h3>
+            <p>
+                <b>array.length</b>
+                <br><br>
+                .length is the most important array method in Java. It returns the number of elements in an array as an integer.
+                <br><br>
+                <b>array2.add()</b>
+                <br><br>
+                .add() is an overloaded method, meaning it can take either 1 or 2 parameters. 
+                <br>
+                You can add an element at a particular index, which will shift all the elements to the right of the specified index.
+                <br><br>
+                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspArray2.add(1, "Aston Martin")
+                <br><br>
+                Or, you can add an element to the end of the list without specifying the index.
+                <br><br>
+                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspArray2.add("Aston Martin")
+                <br><br>
+                <b>array2.get()</b>
+                <br><br>
+                .get() is used to return an element at a specific index.
+                <br><br>
+                <b>array2.indexOf()</b>
+                <br><br>
+                .indexOf returns the index of the first occurance of an element in the list. It returns -1 if the index is not found.
+                <br><br>
+                <b>array2.set()</b>
+                <br><br>
+                .set() replaces an element at a particular index with another element.
+                <br><br>
+                <b>array2.size()</b>
+                <br><br>
+                .size() is synonymous with .length for arrays. It returns the number of elements in the list.
+                <br><br>
+            </p>
             <h3>Printing Arrays and ArrayLists</h3>
             <p>Simply printing an array using System.out.println will print out the actual address of the array in memory, which looks like a random assortment of characters.
                 <br>
                 Printing an ArrayList in the same way will return each of the array elements within a set of square brackets, but this is not a particularly good way to print the contents of the array.
+                <br><br>
+                The proper way to print elements of an array or an ArrayList is to print the elements individually.
+                <br><br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println(array[0])
                 <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println(array2.get(1))
+                <br><br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>Output:</b>
+                <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFerrari
+                <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMercedes
+                <br><br>
+                The best way to print all the elements of an array or ArrayList is to iterate through each index using a for loop.
+                <br><br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfor(int i = 0; i < array.length; i++){
+                  <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println(array[i]);
+                <br>  
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}
+                <br><br>
+                <b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOutput:</b>
+                <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFerrari
+                <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMercedes
+                <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRed Bull
+                <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMcLaren
+                <br><br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfor(int i = 0; i < array2.size(); i++){
+                  <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println(array2.get(i));
+                <br>  
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}
+                <br><br>
+                <b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOutput:</b>
+                <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFerrari
+                <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMercedes
+                <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRed Bull
+                <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMcLaren
+                <br><br>
             </p>
         </div>
     </body>
