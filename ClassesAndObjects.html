@@ -40,9 +40,51 @@
         <p>
           1. You need to give your class a name and create a java file without main. For example, a car class would be.
           <br><br>
-          Car.java
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCar.java
           <br><br>
           2. Next, you need to create private instance variables (PIVs) at the top of your class. These PIVs are the attributes of the object this class describes.
+          <br><br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspString manufacturer;
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspString type;
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspString name;
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspString colour;
+          <br><br>
+          3. Then, you need to create a constructor for your class. This determines which parameters are passed when creating an object.
+          <br>&nbsp&nbsp&nbsp&nbspYou can also have other constructors that take a different number of parameters or have default values.
+          <br><br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsppublic Car(String manufacturer, String type, String name, String colour){
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspthis.manufacturer = manufacturer;
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspthis.type = type;
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspthis.name = name;
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspthis.colour = colour;
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{
+          <br><br>
+          4. You also need to create getter and setter methods for each PIV. These will return each PIV, and allow the user to modify their values.
+          <br><br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsppublic String getName(){
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspreturn name;
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}
+          <br><br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsppublic void setName(String name){
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspthis.name = name;
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}
+          <br><br>
+          5. Setters and getters are the standard methods, but you are able to create any number of unique behavior methods as you want. 
+          <br>&nbsp&nbsp&nbsp&nbspThese behavior methods are what give objects their function. For example, here's a method that will compare
+          <br>&nbsp&nbsp&nbsp&nbspthe names of two car objects and return true if they are the same.
+          <br><br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsppublic boolean sameName(Car car2){
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspreturn name.equals(car2.getName);
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}
+          <br><br>
+          6. Finally, each class needs a way of printing the object. You typically want to print the PIVs of each object.
+          <br><br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsppublic String toString(){
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspreturn "Manufacturer: " + manufacturer + "\n"
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspreturn "Type: " + type + "\n"
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspreturn "Name: " + name + "\n"
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspreturn "Colour: " + colour;
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}
           <br><br>
         </p>
       </div>
