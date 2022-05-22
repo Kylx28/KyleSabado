@@ -27,5 +27,36 @@
       <div class = "section">
           <h2>Recursion</h2>
       </div>
+      <div class="rectangle3">
+          <p>
+            <b>Recursion</b> is a way of solving a problem where the solution depends on the solution of a smaller variation of the same problem.
+            <br>In programming, this is often done by writing a function that calls itself until it reaches a base case in order to stop the loop.
+          </p>
+      </div>
+      <div class="instructions">
+        <h2>Implemetation</h2>
+        <h3>How To Implement Recursion:</h3>
+        <p>
+            1. Recursion is used on particular types of computational problems. One of the most basic examples is computing factorials.
+            <br>&nbsp&nbsp&nbspIn order to avoid making an infinite loop, you need to establish a base case where the loop ends.
+            <br>&nbsp&nbsp&nbspWhen computing a factorial, the last number is always 1. Thus, the base case is when the input is 1.
+            <br><br>
+            2. Recursion involves calling the function inside of itself. In this case, when the function takes an input <b>n</b>, the factorial is computed
+            <br>&nbsp&nbsp&nbspusing the formula n(n-1)(n-2)(n-3)...3 x 2 x 1. So in the function, n * function(n-1) should be returned. When n = 1, the base case takes precedent.
+            <br><br>
+            <b>Recursive Method for Computing factorials:</b>
+            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsppublic int factorial(int n){
+            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspif(n == 1){
+            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspreturn 1;
+            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}
+            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspn * factorial(n-1);
+            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}
+        </p>
+      </div>
+      <div class="example">
+        <h1>Example of Recursion</h1>
+        <img class ="count7-img" src="count7_recursion.png" alt="recursion">
+        <p>This method returns the number of 7s in an string of digits.</p>
+      </div>
   </body>
 </html>
