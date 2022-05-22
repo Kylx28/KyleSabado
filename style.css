@@ -81,6 +81,11 @@ nav{
     font-size: 21px;
     color:rgb(0, 0, 0);
 }
+.instructions{
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+/*Arrays and ArrayLists*/
 .rectangle{
     margin-top: 150px;
     margin-right: auto;
@@ -98,10 +103,6 @@ nav{
     font-size: 23px;
     background-color: white;
     text-align: center;
-}
-.instructions{
-    margin-left: 100px;
-    margin-bottom: 100px;
 }
 /*Classes and Objects*/
 .rectangle2{
@@ -121,4 +122,60 @@ nav{
     font-size: 23px;
     background-color: white;
     text-align: center;
+}
+.example{
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+.class-img{
+    padding: 10px;
+    border: 3px solid red;
+}
+/*Recursion*/
+.rectangle3{
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    outline: red solid 10px;
+    width: 70%;
+    padding: 10px;
+    height: 200px;
+    width: 700px;
+    background-color: white;
+}
+.rectangle3 p{
+    color: black;
+    font-size: 23px;
+    background-color: white;
+    text-align: center;
+}
+.count7-img{
+    width: 500px;
+    padding: 10px;
+    border: 3px solid red;
+}
+/*Algorithms*/
+.rectangle4{
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    outline: red solid 10px;
+    width: 70%;
+    padding: 10px;
+    height: 250px;
+    width: 700px;
+    background-color: white;
+}
+.rectangle4 p{
+    color: black;
+    font-size: 23px;
+    background-color: white;
+    text-align: center;
+}
+.search-img{
+    width: 500px;
+    padding: 10px;
+    border: 3px solid red;
 }
