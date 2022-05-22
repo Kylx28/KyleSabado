@@ -27,5 +27,62 @@
       <div class = "section">
           <h2>Searching and Sorting</h2>
       </div>
+      <div class = "rectangle4">
+        <p><b>Searching</b> algorithms are used to retrieve data stored within a data structure.
+            <br><br>
+            <b>Sorting</b> algorithms are used to arrange information stored within a data structure in a particular way. Examples include sorting in an increasing order, decreasing order, or alphabetically.
+        </p>
+      </div>
+      <div class = "instructions">
+          <h1>Searching</h1>
+          <p>There are two searching algorithms we learned in class.
+              <br><b>Linear Search</b> and <b>Binary Search</b><br><br>
+          </p>
+          <p><h2>Linear Search:</h2>
+             Linear search is an algorithm that sequentially checks each element in the list until the correct element has been found.
+             <br>The linear search algorithm takes in an array of size n, and a key. A for loop will loop through each element in the array
+             <br>until the key has been found, or until its get to the end. If it does not find the key, -1 will be returned. If it does, 
+             <br>the index of the key will be returned.
+            <br><br><h3>Implemetation of Linear Search</h3>
+            <br><img class ="search-img" src="linearSearch.png" alt="linear search">
+            <br><br>
+            Just like the name suggests, the <b>worst case</b> time complexity for linear search is O(n), because for an input size of n, the for loop will iterate n times. 
+            <br>The <b>best case</b> time complexity is O(1), if the key is in the beginning of the array.
+            <br><br>
+            <h2>Binary Search:</h2>
+            Binary search is an algorithm that is used to search for an element in a sorted array by continually dividing the array into halfs.
+            <br>Since the array is sorted, we can compare the key to the middle element which will tell us which half the key is in. This checks is repeatedly
+            <br>done until the index of the key is found, or if the key does not exist in the array.
+            <br><br><h3>Implemetation of Binary Search</h3>
+            There are two ways of implementing binary search. It can be done iteratively, or recursively.
+            <br>The key is compared with the middle element, and if they are equal, the index of the middle element is returned.
+            <br>If the key is less than the middle, the end of the array becomes the middle - 1. If the key is greater than the middle,
+            <br>the start of the array becomes the middle + 1. Then, this is repeated until the key is found using a loop, or using recursion.
+            <br><br>
+            <h3>Iterative Binary Search:</h3>
+            <br><img class ="search-img" src="binarySearchI.png" alt="binary search I">
+            <br><br><br>
+            <h3>Recursive Binary Search:</h3>
+            <br><img class ="search-img" src="binarySearchR.png" alt="binary search R">
+            <br><br>
+            The <b>worst case</b> time complexity is O(logn).
+            <br><br>After some number (x) of iterations, the length of the array is 1.
+            <br>After each iteration, the array is divided in half. Thus, the length of the array after x iterations is
+            <br>n / 2<sup>x</sup>, where n is the length of the array. But, after x iterations, the length is 1. Therefore,
+            <br>n / 2<sup>x</sup> = 1
+            <br>n = 2<sup>x</sup>
+            <br>x = log<sub>2</sub>n
+            <br><br>The <b>best case</b> time complexity is O(1), where the middle element is the key.
+            <br><br>Binary search is much faster than linear search, because as the input size grows, linear growth is much
+            <br>faster than logarithmic growth, meaning the run time of linear search is much larger as well.
+            <br>The caveat is that the array must be sorted before hand. Sorting an array also has a computational complexity.
+            <br><br>
+          </p>
+          <h1>Sorting</h1>
+          <p>There are five sorting algorithms we learned in class.
+              <br><b>Selection Sort</b>, <b>Insertion Sort</b>, <b>Bubble Sort</b>, <b>Quick Sort</b>, and <b>Merge Sort</b>.
+          </p>
+
+      </div>
   </body>
 </html>
