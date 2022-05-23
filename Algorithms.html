@@ -81,8 +81,78 @@
           <h1>Sorting</h1>
           <p>There are five sorting algorithms we learned in class.
               <br><b>Selection Sort</b>, <b>Insertion Sort</b>, <b>Bubble Sort</b>, <b>Quick Sort</b>, and <b>Merge Sort</b>.
+              <br><br>In several of these sorting routines, an element at one index must be swapped another index. This is done by creating an temporary
+              <br>variable in order to store the value of one element, setting the value of that element to another, and setting the other element
+              <br>to the temporary variable. This effectively swaps the values between the two elements.
+              <br><br>
+              <h3>Swap Method Implemetation</h3>
+              <img class ="search-img" src="swap.png" alt="swap">
+              <br><br>This method will be used in several sorting algorithms.
+              <br><br>
+              <h2>Selection Sort</h2>
+              Selection sort works by iterating through the array to find the smallest element and moving it the front. The array is separated
+              <br>into a sorted and an unsorted part. In each iteration, the minimum element from the unsorted array moves to the sorted array.
+              <br><br>
+              <h3>Implemetation</h3>
+              <img class ="search-img" src="selection_sort.png" alt="selection_sort">
+              <br><br>
+              The first for loop keeps track of the subarray of sorted elements, while the nested array iterates through the unsorted part of the array.
+              <br>In each iteration of the nested for loop, a comparison is made between the current index every other index until its finds something
+              <br>that is less than the value at the current index. If this is the case, the two elements swap places. The i index increments, and the
+              <br>process is repeated until the array is sorted.
+              <br><br>
+              The <b>worst case</b> time complexity is <b>O(n<sup>2</sup>)</b>.
+              <br><br>Actually, the time complexity of selection sort is always <b>O(n<sup>2</sup>)</b>.
+              <br><br>
+              Selection sort is a sort-in-place algorithm, meaning the algorithm does not require any auxiliary arrays.
+              <br><br> 
+              <h2>Bubble Sort</h2>
+              Bubble sort works by comparing adjacent elements and swapping them if the current element is greater than the adjacent one.
+              <br><br>
+              <h3>Implemetation</h3>
+              <img class ="search-img" src="bubble_sort.png" alt="bubble_sort">
+              <br><br>This algorithm can be made more efficient by breaking the loop when elements are no longer being swapped, meaning the array is sorted.
+              <br><br>
+              <h3>Optimized Bubble Sort</h3>
+              <img class ="search-img" src="bubble_sort2.png" alt="bubble_sort2">
+              <br><br>The time complexity of bubble sort is <b>O(n<sup>2</sup>)</b>. Even with the optimization, it still has quadratic time complexity.
+              <br><br>
+              Bubble sort is a sort-in-place algorithm.
+              <h2>Insertion Sort</h2>
+              Insertion sort works by comparing each element to the elements on its left. The current element is inserted into its correct position
+              <br>in the array. During the algorithm, the array will form sorted and unsorted sections.
+              <br><br>
+              <h3>Implemetation</h3>
+              <img class ="search-img" src="insertion_sort.png" alt="insertion_sort">
+              <br><br>
+              Starting at the beginning of the array, the first element is on its own, so its sorted. The next element is compared with the element in the
+              <br>sorted array, at inserted at its correct position. Each subsequent element is compared with each element in the sorted array, and placed
+              <br>where it should belong, until entire array is sorted.
+              <br><br>
+              The <b>worst case</b> time complexity of insertion sort is <b>O(n<sup>2</sup>)</b>.
+              <br><br>
+              The <b>best case</b> time complexity of insertion sort is <b>O(n)</b>, which is when the array is already sorted.
+              <br><br>
+              Insertion sort is a sort-in-place algorithm.
+              <h2>Quick Sort</h2>
+              <br>Quick Sort is a recursive, divide and conquer algorithm, in which the sorting problem is broken down into sub problems which have simple solutions.
+              <br>An element in the array is picked as the pivot, and partitions of the array are created around the pivot. Any element can be picked as the pivot, but
+              <br>in this case we're going to use the last element. This algorithm requires two methods, a partition method, and a recursive method.
+              <br><br>
+              <h3>Partition Implemetation</h3>
+              <img class ="search-img" src="partition.png" alt="partition">
+              <br><br>Once this method runs completely, we are 100% certain that the pivot was moved to its correct spot. Now, we recursively call the partition function on the subarrays
+              <br>left and right of the pivot. After this, the array will be completely sorted.
+              <br><br>
+              <h3>Quick Sort Implemetation</h3>
+              <img class ="search-img" src="quick_sort.png" alt="quick_sort">
+              <br><br>
+              The <b>worst case</b> time complexity of this algorithm is <b>O(n<sup>2</sup>)</b>.
+              <br><br>
+              The <b>best case</b> time complexity is <b>O(nlogn)</b>, when the pivot is always the middle element.
+              <br><br>
+              Quick Sort is also a sort-in-place algorithm.
           </p>
-
       </div>
   </body>
 </html>
