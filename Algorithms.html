@@ -134,8 +134,9 @@
               The <b>best case</b> time complexity of insertion sort is <b>O(n)</b>, which is when the array is already sorted.
               <br><br>
               Insertion sort is a sort-in-place algorithm.
+              <br><br>
               <h2>Quick Sort</h2>
-              <br>Quick Sort is a recursive, divide and conquer algorithm, in which the sorting problem is broken down into sub problems which have simple solutions.
+              Quick Sort is a recursive, divide and conquer algorithm, in which the sorting problem is broken down into sub problems which have simple solutions.
               <br>An element in the array is picked as the pivot, and partitions of the array are created around the pivot. Any element can be picked as the pivot, but
               <br>in this case we're going to use the last element. This algorithm requires two methods, a partition method, and a recursive method.
               <br><br>
@@ -152,6 +153,27 @@
               The <b>best case</b> time complexity is <b>O(nlogn)</b>, when the pivot is always the middle element.
               <br><br>
               Quick Sort is also a sort-in-place algorithm.
+              <br><br>
+              <h2>Merge Sort</h2>
+              Merge sort another divide and conquer algorithm like quick sort. The array is divided into many halfs until each element has its own array. The halfs are sorted
+              <br>and merged into one array using another method called merge(). Like quick sort, merge sort is a recursive algorithm.
+              <br><br>
+              <h3>merge() Implemetation</h3>
+              <img class ="search-img" src="merge.png" alt="merge">
+              <br><br>
+              The merge() method compares two different elements in two different arrays at the same index and inserts them in their correct order. This comparison is done
+              <br>using inside of a while loop, and if there are any left over elements, two separate while loops add them to the array in their proper order.
+              <br><br>
+              <h3>Merge Sort Implementation</h3>
+              <img class ="search-img" src="merge_sort.png" alt="merge_sort">
+              <br><br>
+              The mergeSort() method recusively breaks up the given array into various single sized arrays.
+              <br><br>
+              The time complexity of merge sort is always <b>O(nlogn)</b>.
+              <br><br>
+              The space complexity of merge sort is <b>O(n)</b>, meaning the memory use increases linearly as the input size increases. 
+              <br><br>
+              Merge sort is not a sort-in-place algorithm.
           </p>
       </div>
   </body>
